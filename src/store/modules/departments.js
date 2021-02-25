@@ -22,7 +22,6 @@ const state = { ...initialState }
 
 const getters = {
   departments: state => state.departments,
-
   getDepartments: (state) => (id) => {
     return state.departments.find(
       (department) => department.id === id
@@ -97,7 +96,6 @@ const mutations = {
       state.departments.push(newDepartement)
     }
   },
-
   [DELETE_DEPARTMENTS_START] () {},
   [DELETE_DEPARTMENTS_ERROR] () {},
 
